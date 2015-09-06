@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ABEAFFC1B9CB94900E8129D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEAFFB1B9CB94900E8129D /* main.m */; };
+		8ABEAFFF1B9CB94900E8129D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */; };
+		8ABEB0021B9CB94900E8129D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0011B9CB94900E8129D /* FirstViewController.m */; };
+		8ABEB0051B9CB94900E8129D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0041B9CB94900E8129D /* SecondViewController.m */; };
+		8ABEB0081B9CB94900E8129D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0061B9CB94900E8129D /* Main.storyboard */; };
+		8ABEB00A1B9CB94900E8129D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0091B9CB94900E8129D /* Images.xcassets */; };
+		8ABEB00D1B9CB94900E8129D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */; };
+		8ABEB0191B9CB94900E8129D /* ShypChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ABEB0131B9CB94900E8129D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ABEAFEE1B9CB94900E8129D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ABEAFF51B9CB94900E8129D;
+			remoteInfo = ShypChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8ABEAFF61B9CB94900E8129D /* ShypChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShypChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABEAFFA1B9CB94900E8129D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABEAFFB1B9CB94900E8129D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ABEAFFD1B9CB94900E8129D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8ABEB0001B9CB94900E8129D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8ABEB0011B9CB94900E8129D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8ABEB0031B9CB94900E8129D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8ABEB0041B9CB94900E8129D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8ABEB0071B9CB94900E8129D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ABEB0091B9CB94900E8129D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8ABEB00C1B9CB94900E8129D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8ABEB0121B9CB94900E8129D /* ShypChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShypChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABEB0171B9CB94900E8129D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShypChallengeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ABEAFF31B9CB94900E8129D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABEB00F1B9CB94900E8129D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ABEAFED1B9CB94900E8129D = {
+			isa = PBXGroup;
+			children = (
+				8ABEAFF81B9CB94900E8129D /* ShypChallenge */,
+				8ABEB0151B9CB94900E8129D /* ShypChallengeTests */,
+				8ABEAFF71B9CB94900E8129D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ABEAFF71B9CB94900E8129D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEAFF61B9CB94900E8129D /* ShypChallenge.app */,
+				8ABEB0121B9CB94900E8129D /* ShypChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ABEAFF81B9CB94900E8129D /* ShypChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEAFFD1B9CB94900E8129D /* AppDelegate.h */,
+				8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */,
+				8ABEB0001B9CB94900E8129D /* FirstViewController.h */,
+				8ABEB0011B9CB94900E8129D /* FirstViewController.m */,
+				8ABEB0031B9CB94900E8129D /* SecondViewController.h */,
+				8ABEB0041B9CB94900E8129D /* SecondViewController.m */,
+				8ABEB0061B9CB94900E8129D /* Main.storyboard */,
+				8ABEB0091B9CB94900E8129D /* Images.xcassets */,
+				8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */,
+				8ABEAFF91B9CB94900E8129D /* Supporting Files */,
+			);
+			path = ShypChallenge;
+			sourceTree = "<group>";
+		};
+		8ABEAFF91B9CB94900E8129D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEAFFA1B9CB94900E8129D /* Info.plist */,
+				8ABEAFFB1B9CB94900E8129D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ABEB0151B9CB94900E8129D /* ShypChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */,
+				8ABEB0161B9CB94900E8129D /* Supporting Files */,
+			);
+			path = ShypChallengeTests;
+			sourceTree = "<group>";
+		};
+		8ABEB0161B9CB94900E8129D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEB0171B9CB94900E8129D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ABEAFF51B9CB94900E8129D /* ShypChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABEB01C1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallenge" */;
+			buildPhases = (
+				8ABEAFF21B9CB94900E8129D /* Sources */,
+				8ABEAFF31B9CB94900E8129D /* Frameworks */,
+				8ABEAFF41B9CB94900E8129D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShypChallenge;
+			productName = ShypChallenge;
+			productReference = 8ABEAFF61B9CB94900E8129D /* ShypChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ABEB0111B9CB94900E8129D /* ShypChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABEB01F1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallengeTests" */;
+			buildPhases = (
+				8ABEB00E1B9CB94900E8129D /* Sources */,
+				8ABEB00F1B9CB94900E8129D /* Frameworks */,
+				8ABEB0101B9CB94900E8129D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ABEB0141B9CB94900E8129D /* PBXTargetDependency */,
+			);
+			name = ShypChallengeTests;
+			productName = ShypChallengeTests;
+			productReference = 8ABEB0121B9CB94900E8129D /* ShypChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ABEAFEE1B9CB94900E8129D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "OMG Labs Inc.";
+				TargetAttributes = {
+					8ABEAFF51B9CB94900E8129D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8ABEB0111B9CB94900E8129D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8ABEAFF51B9CB94900E8129D;
+					};
+				};
+			};
+			buildConfigurationList = 8ABEAFF11B9CB94900E8129D /* Build configuration list for PBXProject "ShypChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ABEAFED1B9CB94900E8129D;
+			productRefGroup = 8ABEAFF71B9CB94900E8129D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ABEAFF51B9CB94900E8129D /* ShypChallenge */,
+				8ABEB0111B9CB94900E8129D /* ShypChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ABEAFF41B9CB94900E8129D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABEB0081B9CB94900E8129D /* Main.storyboard in Resources */,
+				8ABEB00D1B9CB94900E8129D /* LaunchScreen.xib in Resources */,
+				8ABEB00A1B9CB94900E8129D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABEB0101B9CB94900E8129D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ABEAFF21B9CB94900E8129D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABEB0051B9CB94900E8129D /* SecondViewController.m in Sources */,
+				8ABEAFFF1B9CB94900E8129D /* AppDelegate.m in Sources */,
+				8ABEB0021B9CB94900E8129D /* FirstViewController.m in Sources */,
+				8ABEAFFC1B9CB94900E8129D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ABEB00E1B9CB94900E8129D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ABEB0191B9CB94900E8129D /* ShypChallengeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ABEB0141B9CB94900E8129D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ABEAFF51B9CB94900E8129D /* ShypChallenge */;
+			targetProxy = 8ABEB0131B9CB94900E8129D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8ABEB0061B9CB94900E8129D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ABEB0071B9CB94900E8129D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ABEB00C1B9CB94900E8129D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ABEB01A1B9CB94900E8129D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ABEB01B1B9CB94900E8129D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ABEB01D1B9CB94900E8129D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShypChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8ABEB01E1B9CB94900E8129D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShypChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8ABEB0201B9CB94900E8129D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShypChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShypChallenge.app/ShypChallenge";
+			};
+			name = Debug;
+		};
+		8ABEB0211B9CB94900E8129D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShypChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShypChallenge.app/ShypChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ABEAFF11B9CB94900E8129D /* Build configuration list for PBXProject "ShypChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ABEB01A1B9CB94900E8129D /* Debug */,
+				8ABEB01B1B9CB94900E8129D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ABEB01C1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ABEB01D1B9CB94900E8129D /* Debug */,
+				8ABEB01E1B9CB94900E8129D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8ABEB01F1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ABEB0201B9CB94900E8129D /* Debug */,
+				8ABEB0211B9CB94900E8129D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ABEAFEE1B9CB94900E8129D /* Project object */;
+}
