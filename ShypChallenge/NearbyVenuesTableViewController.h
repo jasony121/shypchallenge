@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface NearbyVenuesTableViewController : UITableViewController
+
+- (BOOL)isAuthorizedLocationManagerStatus:(CLAuthorizationStatus)status;
 
 @end

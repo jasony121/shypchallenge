@@ -168,7 +168,7 @@ typedef NS_ENUM(NSInteger, VenueDetailSection) {
     if (manager.authenticated) {
         [FoursquareRequests checkinRequestWithIdentifier:_venue.identifier success:^(AFHTTPRequestOperation *operation, id response) {
             NSString *message = [NSString stringWithFormat:@"Successfully checked in to %@!", _venue.name];
-            [[[UIAlertView alloc] initWithTitle:nil message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"Success" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             [[[UIAlertView alloc] initWithTitle:nil message:@"Error. Failed to check in." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }];

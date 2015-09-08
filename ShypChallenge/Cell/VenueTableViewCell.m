@@ -18,6 +18,7 @@
 
 - (BOOL)shouldUpdateCellWithObject:(Venue *)venue {
     self.textLabel.text = venue.name;
+    self.accessibilityLabel = venue.name;
     return YES;
 }
 

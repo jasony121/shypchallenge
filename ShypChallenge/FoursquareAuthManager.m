@@ -35,7 +35,7 @@ static NSString * const kUserDefaultsAuthKey = @"kUserDefaultsAuthKey";
 }
 
 - (void)showSignInDialog {
-    [[[UIAlertView alloc] initWithTitle:nil
+    [[[UIAlertView alloc] initWithTitle:@"Signin Required"
                                 message:@"You must sign in to Foursquare to perform this action"
                                delegate:self cancelButtonTitle:@"Cancel"
                       otherButtonTitles:@"Signin", nil] show];
@@ -90,6 +90,10 @@ static NSString * const kUserDefaultsAuthKey = @"kUserDefaultsAuthKey";
 
 - (NSString *)authToken {
     return [[NSUserDefaults standardUserDefaults] valueForKey:kUserDefaultsAuthKey];
+}
+
+- (void)setAuthToken:(NSString *)authToken {
+    [[NSUserDefaults standardUserDefaults] setValue:authToken forKey:kUserDefaultsAuthKey];
 }
 
 @end

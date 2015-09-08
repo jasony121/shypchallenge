@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57E0E0106138121A9985CF7F /* libPods-ShypChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B3BE12BBF90A5654C9246C /* libPods-ShypChallengeTests.a */; };
 		8ABEAFFC1B9CB94900E8129D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEAFFB1B9CB94900E8129D /* main.m */; };
 		8ABEAFFF1B9CB94900E8129D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */; };
 		8ABEB00A1B9CB94900E8129D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0091B9CB94900E8129D /* Images.xcassets */; };
 		8ABEB00D1B9CB94900E8129D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */; };
-		8ABEB0191B9CB94900E8129D /* ShypChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */; };
 		8ABEB0291B9CCB3E00E8129D /* NearbyVenuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0281B9CCB3E00E8129D /* NearbyVenuesTableViewController.m */; };
 		8ABEB02C1B9CCD4400E8129D /* FoursquareRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB02B1B9CCD4400E8129D /* FoursquareRequests.m */; };
 		8ABEB0301B9CD1F300E8129D /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB02F1B9CD1F300E8129D /* Venue.m */; };
@@ -30,6 +30,8 @@
 		8ABEB06A1B9E631200E8129D /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0641B9E631200E8129D /* PhotosTableViewCell.xib */; };
 		8ABEB06D1B9E635D00E8129D /* CLLocationManager+Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB06C1B9E635D00E8129D /* CLLocationManager+Simulator.m */; };
 		8ABEB0701B9E638A00E8129D /* UITableView+NimbusModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB06F1B9E638A00E8129D /* UITableView+NimbusModels.m */; };
+		8ABEB0721B9E831500E8129D /* CheckinTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0711B9E831500E8129D /* CheckinTestCase.m */; };
+		8ABEB0741B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0731B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m */; };
 		E5DD74E5A52735B8C7A092CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFADE32DBE211280C849103C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C4E1287B1D292F7772F852 /* Pods-ShypChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShypChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShypChallengeTests/Pods-ShypChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8ABEAFF61B9CB94900E8129D /* ShypChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShypChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEAFFA1B9CB94900E8129D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ABEAFFB1B9CB94900E8129D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,7 +56,6 @@
 		8ABEB00C1B9CB94900E8129D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8ABEB0121B9CB94900E8129D /* ShypChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShypChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEB0171B9CB94900E8129D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShypChallengeTests.m; sourceTree = "<group>"; };
 		8ABEB0271B9CCB3E00E8129D /* NearbyVenuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyVenuesTableViewController.h; sourceTree = "<group>"; };
 		8ABEB0281B9CCB3E00E8129D /* NearbyVenuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyVenuesTableViewController.m; sourceTree = "<group>"; };
 		8ABEB02A1B9CCD4400E8129D /* FoursquareRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareRequests.h; sourceTree = "<group>"; };
@@ -86,9 +88,13 @@
 		8ABEB06C1B9E635D00E8129D /* CLLocationManager+Simulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Simulator.m"; sourceTree = "<group>"; };
 		8ABEB06E1B9E638A00E8129D /* UITableView+NimbusModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NimbusModels.h"; sourceTree = "<group>"; };
 		8ABEB06F1B9E638A00E8129D /* UITableView+NimbusModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NimbusModels.m"; sourceTree = "<group>"; };
+		8ABEB0711B9E831500E8129D /* CheckinTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckinTestCase.m; sourceTree = "<group>"; };
+		8ABEB0731B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyVenuesTableViewControllerTestCase.m; sourceTree = "<group>"; };
 		AAB588903F2E5F915E10626F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CB4409F9BED78DF2ADD5FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C53E17A74900C9FFD26F7703 /* Pods-ShypChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShypChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShypChallengeTests/Pods-ShypChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		CFADE32DBE211280C849103C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B3BE12BBF90A5654C9246C /* libPods-ShypChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShypChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E0E0106138121A9985CF7F /* libPods-ShypChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				CFADE32DBE211280C849103C /* libPods.a */,
+				E7B3BE12BBF90A5654C9246C /* libPods-ShypChallengeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,8 +183,9 @@
 		8ABEB0151B9CB94900E8129D /* ShypChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */,
 				8ABEB0161B9CB94900E8129D /* Supporting Files */,
+				8ABEB0711B9E831500E8129D /* CheckinTestCase.m */,
+				8ABEB0731B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m */,
 			);
 			path = ShypChallengeTests;
 			sourceTree = "<group>";
@@ -237,6 +246,8 @@
 			children = (
 				AAB588903F2E5F915E10626F /* Pods.debug.xcconfig */,
 				B0CB4409F9BED78DF2ADD5FE /* Pods.release.xcconfig */,
+				08C4E1287B1D292F7772F852 /* Pods-ShypChallengeTests.debug.xcconfig */,
+				C53E17A74900C9FFD26F7703 /* Pods-ShypChallengeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -267,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ABEB01F1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallengeTests" */;
 			buildPhases = (
+				F6FD9AD52C3489617D98E65E /* Check Pods Manifest.lock */,
 				8ABEB00E1B9CB94900E8129D /* Sources */,
 				8ABEB00F1B9CB94900E8129D /* Frameworks */,
 				8ABEB0101B9CB94900E8129D /* Resources */,
+				F3C31B7FAD0792CAB72247D3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,6 +385,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F3C31B7FAD0792CAB72247D3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ShypChallengeTests/Pods-ShypChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6FD9AD52C3489617D98E65E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -402,7 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABEB0191B9CB94900E8129D /* ShypChallengeTests.m in Sources */,
+				8ABEB0741B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m in Sources */,
+				8ABEB0721B9E831500E8129D /* CheckinTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +580,7 @@
 		};
 		8ABEB0201B9CB94900E8129D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C4E1287B1D292F7772F852 /* Pods-ShypChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -555,6 +600,7 @@
 		};
 		8ABEB0211B9CB94900E8129D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53E17A74900C9FFD26F7703 /* Pods-ShypChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

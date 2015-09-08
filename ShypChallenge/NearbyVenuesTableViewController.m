@@ -29,6 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.tableView.accessibilityLabel = @"Search Table";
+    self.tableView.isAccessibilityElement = YES;
+    
     // Bind actions to models
     _actions = [[NITableViewActions alloc] init];
     [_actions attachToClass:[Venue class] tapBlock:^BOOL(Venue *venue, id target, NSIndexPath *indexPath) {

@@ -21,6 +21,9 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - FSOAuth (1.0)
+  - KIF (3.2.3):
+    - KIF/XCTest (= 3.2.3)
+  - KIF/XCTest (3.2.3)
   - Mantle (2.0.4):
     - Mantle/extobjc (= 2.0.4)
   - Mantle/extobjc (2.0.4)
@@ -80,12 +83,14 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (= 2.6.0)
   - FSOAuth (= 1.0)
+  - KIF (= 3.2.3)
   - Mantle (= 2.0.4)
   - Nimbus (= 1.2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   FSOAuth: 438481891a5334d489795ae14afc372904acf49c
+  KIF: a94bffe9c97e449e44f8fa481c53243d21309e1e
   Mantle: 6bee68168423948be0c0c5924832bf3af188e099
   Nimbus: 3d6dfdeabf548ba4eb43be24e74fd202fb8c4e22
 
