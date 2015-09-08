@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "NearbyVenuesTableViewController.h"
+#import "RecentCheckinsTableViewController.h"
+#import "FoursquareAuthManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +20,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NearbyVenuesTableViewController *nearby = [[NearbyVenuesTableViewController alloc] init];
+    nearby.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:0];
+    
+    RecentCheckinsTableViewController *recent = [[RecentCheckinsTableViewController alloc] init];
+    recent.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemHistory tag:1];
+                         
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[ nearby, recent ];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -40,6 +58,11 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    [[FoursquareAuthManager sharedManager] handleCallbackURL:url];
+    return YES;
 }
 
 @end

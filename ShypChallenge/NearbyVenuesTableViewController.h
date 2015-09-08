@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  NearbyVenuesTableViewController.h
 //  ShypChallenge
 //
 //  Created by Jason Yonker on 9/6/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-
+@interface NearbyVenuesTableViewController : UITableViewController
 
 @end
-

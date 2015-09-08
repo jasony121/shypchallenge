@@ -9,12 +9,28 @@
 /* Begin PBXBuildFile section */
 		8ABEAFFC1B9CB94900E8129D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEAFFB1B9CB94900E8129D /* main.m */; };
 		8ABEAFFF1B9CB94900E8129D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */; };
-		8ABEB0021B9CB94900E8129D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0011B9CB94900E8129D /* FirstViewController.m */; };
-		8ABEB0051B9CB94900E8129D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0041B9CB94900E8129D /* SecondViewController.m */; };
-		8ABEB0081B9CB94900E8129D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0061B9CB94900E8129D /* Main.storyboard */; };
 		8ABEB00A1B9CB94900E8129D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0091B9CB94900E8129D /* Images.xcassets */; };
 		8ABEB00D1B9CB94900E8129D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */; };
 		8ABEB0191B9CB94900E8129D /* ShypChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */; };
+		8ABEB0291B9CCB3E00E8129D /* NearbyVenuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0281B9CCB3E00E8129D /* NearbyVenuesTableViewController.m */; };
+		8ABEB02C1B9CCD4400E8129D /* FoursquareRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB02B1B9CCD4400E8129D /* FoursquareRequests.m */; };
+		8ABEB0301B9CD1F300E8129D /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB02F1B9CD1F300E8129D /* Venue.m */; };
+		8ABEB0351B9CF23D00E8129D /* VenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0331B9CF23D00E8129D /* VenueTableViewCell.m */; };
+		8ABEB0361B9CF23D00E8129D /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0341B9CF23D00E8129D /* VenueTableViewCell.xib */; };
+		8ABEB0391B9D044100E8129D /* CLLocationManager+Simulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0381B9D044100E8129D /* CLLocationManager+Simulator.m */; };
+		8ABEB03C1B9D0FB600E8129D /* VenueDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB03B1B9D0FB600E8129D /* VenueDetailViewController.m */; };
+		8ABEB0401B9D3F6400E8129D /* PhotosTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB03E1B9D3F6400E8129D /* PhotosTableViewCell.m */; };
+		8ABEB0411B9D3F6400E8129D /* PhotosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB03F1B9D3F6400E8129D /* PhotosTableViewCell.xib */; };
+		8ABEB0451B9D4C5800E8129D /* ActionsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0431B9D4C5800E8129D /* ActionsTableViewCell.m */; };
+		8ABEB0461B9D4C5800E8129D /* ActionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0441B9D4C5800E8129D /* ActionsTableViewCell.xib */; };
+		8ABEB04A1B9D4D1400E8129D /* CoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0481B9D4D1400E8129D /* CoreTableViewCell.m */; };
+		8ABEB04B1B9D4D1400E8129D /* CoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ABEB0491B9D4D1400E8129D /* CoreTableViewCell.xib */; };
+		8ABEB04E1B9E08E900E8129D /* UITableView+NimbusModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB04D1B9E08E900E8129D /* UITableView+NimbusModels.m */; };
+		8ABEB0521B9E0F4200E8129D /* Venue+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0511B9E0F4200E8129D /* Venue+Util.m */; };
+		8ABEB0551B9E36DA00E8129D /* FoursquareAuthManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0541B9E36DA00E8129D /* FoursquareAuthManager.m */; };
+		8ABEB0581B9E502600E8129D /* RecentCheckinsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0571B9E502600E8129D /* RecentCheckinsTableViewController.m */; };
+		8ABEB05B1B9E51F700E8129D /* Checkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB05A1B9E51F700E8129D /* Checkin.m */; };
+		E5DD74E5A52735B8C7A092CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFADE32DBE211280C849103C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +49,46 @@
 		8ABEAFFB1B9CB94900E8129D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8ABEAFFD1B9CB94900E8129D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8ABEB0001B9CB94900E8129D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		8ABEB0011B9CB94900E8129D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		8ABEB0031B9CB94900E8129D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		8ABEB0041B9CB94900E8129D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		8ABEB0071B9CB94900E8129D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ABEB0091B9CB94900E8129D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8ABEB00C1B9CB94900E8129D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8ABEB0121B9CB94900E8129D /* ShypChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShypChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEB0171B9CB94900E8129D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ABEB0181B9CB94900E8129D /* ShypChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShypChallengeTests.m; sourceTree = "<group>"; };
+		8ABEB0271B9CCB3E00E8129D /* NearbyVenuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyVenuesTableViewController.h; sourceTree = "<group>"; };
+		8ABEB0281B9CCB3E00E8129D /* NearbyVenuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyVenuesTableViewController.m; sourceTree = "<group>"; };
+		8ABEB02A1B9CCD4400E8129D /* FoursquareRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareRequests.h; sourceTree = "<group>"; };
+		8ABEB02B1B9CCD4400E8129D /* FoursquareRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareRequests.m; sourceTree = "<group>"; };
+		8ABEB02E1B9CD1F200E8129D /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		8ABEB02F1B9CD1F300E8129D /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
+		8ABEB0321B9CF23D00E8129D /* VenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewCell.h; sourceTree = "<group>"; };
+		8ABEB0331B9CF23D00E8129D /* VenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewCell.m; sourceTree = "<group>"; };
+		8ABEB0341B9CF23D00E8129D /* VenueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
+		8ABEB0371B9D044100E8129D /* CLLocationManager+Simulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+Simulator.h"; sourceTree = "<group>"; };
+		8ABEB0381B9D044100E8129D /* CLLocationManager+Simulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+Simulator.m"; sourceTree = "<group>"; };
+		8ABEB03A1B9D0FB600E8129D /* VenueDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueDetailViewController.h; sourceTree = "<group>"; };
+		8ABEB03B1B9D0FB600E8129D /* VenueDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueDetailViewController.m; sourceTree = "<group>"; };
+		8ABEB03D1B9D3F6400E8129D /* PhotosTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosTableViewCell.h; sourceTree = "<group>"; };
+		8ABEB03E1B9D3F6400E8129D /* PhotosTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosTableViewCell.m; sourceTree = "<group>"; };
+		8ABEB03F1B9D3F6400E8129D /* PhotosTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosTableViewCell.xib; sourceTree = "<group>"; };
+		8ABEB0421B9D4C5800E8129D /* ActionsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsTableViewCell.h; sourceTree = "<group>"; };
+		8ABEB0431B9D4C5800E8129D /* ActionsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsTableViewCell.m; sourceTree = "<group>"; };
+		8ABEB0441B9D4C5800E8129D /* ActionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionsTableViewCell.xib; sourceTree = "<group>"; };
+		8ABEB0471B9D4D1400E8129D /* CoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTableViewCell.h; sourceTree = "<group>"; };
+		8ABEB0481B9D4D1400E8129D /* CoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTableViewCell.m; sourceTree = "<group>"; };
+		8ABEB0491B9D4D1400E8129D /* CoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreTableViewCell.xib; sourceTree = "<group>"; };
+		8ABEB04C1B9E08E900E8129D /* UITableView+NimbusModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NimbusModels.h"; sourceTree = "<group>"; };
+		8ABEB04D1B9E08E900E8129D /* UITableView+NimbusModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NimbusModels.m"; sourceTree = "<group>"; };
+		8ABEB0501B9E0F4200E8129D /* Venue+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Venue+Util.h"; sourceTree = "<group>"; };
+		8ABEB0511B9E0F4200E8129D /* Venue+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Venue+Util.m"; sourceTree = "<group>"; };
+		8ABEB0531B9E36DA00E8129D /* FoursquareAuthManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareAuthManager.h; sourceTree = "<group>"; };
+		8ABEB0541B9E36DA00E8129D /* FoursquareAuthManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareAuthManager.m; sourceTree = "<group>"; };
+		8ABEB0561B9E502600E8129D /* RecentCheckinsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentCheckinsTableViewController.h; sourceTree = "<group>"; };
+		8ABEB0571B9E502600E8129D /* RecentCheckinsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentCheckinsTableViewController.m; sourceTree = "<group>"; };
+		8ABEB0591B9E51F700E8129D /* Checkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Checkin.h; sourceTree = "<group>"; };
+		8ABEB05A1B9E51F700E8129D /* Checkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Checkin.m; sourceTree = "<group>"; };
+		AAB588903F2E5F915E10626F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B0CB4409F9BED78DF2ADD5FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CFADE32DBE211280C849103C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DD74E5A52735B8C7A092CC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBBE819DFA24787DAD3690B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFADE32DBE211280C849103C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8ABEAFED1B9CB94900E8129D = {
 			isa = PBXGroup;
 			children = (
 				8ABEAFF81B9CB94900E8129D /* ShypChallenge */,
 				8ABEB0151B9CB94900E8129D /* ShypChallengeTests */,
 				8ABEAFF71B9CB94900E8129D /* Products */,
+				B3DD2BE39D747CE17F532F80 /* Pods */,
+				0EBBE819DFA24787DAD3690B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,16 +141,37 @@
 		8ABEAFF81B9CB94900E8129D /* ShypChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				8ABEB04F1B9E0F1700E8129D /* Categories */,
+				8ABEB0311B9CEE3600E8129D /* Cell */,
+				8ABEB02D1B9CCD7C00E8129D /* Model */,
 				8ABEAFFD1B9CB94900E8129D /* AppDelegate.h */,
 				8ABEAFFE1B9CB94900E8129D /* AppDelegate.m */,
-				8ABEB0001B9CB94900E8129D /* FirstViewController.h */,
-				8ABEB0011B9CB94900E8129D /* FirstViewController.m */,
-				8ABEB0031B9CB94900E8129D /* SecondViewController.h */,
-				8ABEB0041B9CB94900E8129D /* SecondViewController.m */,
-				8ABEB0061B9CB94900E8129D /* Main.storyboard */,
 				8ABEB0091B9CB94900E8129D /* Images.xcassets */,
 				8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */,
 				8ABEAFF91B9CB94900E8129D /* Supporting Files */,
+				8ABEB0271B9CCB3E00E8129D /* NearbyVenuesTableViewController.h */,
+				8ABEB0281B9CCB3E00E8129D /* NearbyVenuesTableViewController.m */,
+				8ABEB02A1B9CCD4400E8129D /* FoursquareRequests.h */,
+				8ABEB02B1B9CCD4400E8129D /* FoursquareRequests.m */,
+				8ABEB0371B9D044100E8129D /* CLLocationManager+Simulator.h */,
+				8ABEB0381B9D044100E8129D /* CLLocationManager+Simulator.m */,
+				8ABEB03A1B9D0FB600E8129D /* VenueDetailViewController.h */,
+				8ABEB03B1B9D0FB600E8129D /* VenueDetailViewController.m */,
+				8ABEB03D1B9D3F6400E8129D /* PhotosTableViewCell.h */,
+				8ABEB03E1B9D3F6400E8129D /* PhotosTableViewCell.m */,
+				8ABEB03F1B9D3F6400E8129D /* PhotosTableViewCell.xib */,
+				8ABEB0421B9D4C5800E8129D /* ActionsTableViewCell.h */,
+				8ABEB0431B9D4C5800E8129D /* ActionsTableViewCell.m */,
+				8ABEB0441B9D4C5800E8129D /* ActionsTableViewCell.xib */,
+				8ABEB0471B9D4D1400E8129D /* CoreTableViewCell.h */,
+				8ABEB0481B9D4D1400E8129D /* CoreTableViewCell.m */,
+				8ABEB0491B9D4D1400E8129D /* CoreTableViewCell.xib */,
+				8ABEB04C1B9E08E900E8129D /* UITableView+NimbusModels.h */,
+				8ABEB04D1B9E08E900E8129D /* UITableView+NimbusModels.m */,
+				8ABEB0531B9E36DA00E8129D /* FoursquareAuthManager.h */,
+				8ABEB0541B9E36DA00E8129D /* FoursquareAuthManager.m */,
+				8ABEB0561B9E502600E8129D /* RecentCheckinsTableViewController.h */,
+				8ABEB0571B9E502600E8129D /* RecentCheckinsTableViewController.m */,
 			);
 			path = ShypChallenge;
 			sourceTree = "<group>";
@@ -124,6 +202,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8ABEB02D1B9CCD7C00E8129D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEB02E1B9CD1F200E8129D /* Venue.h */,
+				8ABEB02F1B9CD1F300E8129D /* Venue.m */,
+				8ABEB0591B9E51F700E8129D /* Checkin.h */,
+				8ABEB05A1B9E51F700E8129D /* Checkin.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8ABEB0311B9CEE3600E8129D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEB0321B9CF23D00E8129D /* VenueTableViewCell.h */,
+				8ABEB0331B9CF23D00E8129D /* VenueTableViewCell.m */,
+				8ABEB0341B9CF23D00E8129D /* VenueTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8ABEB04F1B9E0F1700E8129D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8ABEB0501B9E0F4200E8129D /* Venue+Util.h */,
+				8ABEB0511B9E0F4200E8129D /* Venue+Util.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B3DD2BE39D747CE17F532F80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAB588903F2E5F915E10626F /* Pods.debug.xcconfig */,
+				B0CB4409F9BED78DF2ADD5FE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8ABEB01C1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallenge" */;
 			buildPhases = (
+				78B3A9611657951CF3715461 /* Check Pods Manifest.lock */,
 				8ABEAFF21B9CB94900E8129D /* Sources */,
 				8ABEAFF31B9CB94900E8129D /* Frameworks */,
 				8ABEAFF41B9CB94900E8129D /* Resources */,
+				BB98095A675745E9ADF4B4C7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +323,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABEB0081B9CB94900E8129D /* Main.storyboard in Resources */,
+				8ABEB04B1B9D4D1400E8129D /* CoreTableViewCell.xib in Resources */,
+				8ABEB0411B9D3F6400E8129D /* PhotosTableViewCell.xib in Resources */,
 				8ABEB00D1B9CB94900E8129D /* LaunchScreen.xib in Resources */,
+				8ABEB0461B9D4C5800E8129D /* ActionsTableViewCell.xib in Resources */,
 				8ABEB00A1B9CB94900E8129D /* Images.xcassets in Resources */,
+				8ABEB0361B9CF23D00E8129D /* VenueTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,15 +341,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78B3A9611657951CF3715461 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB98095A675745E9ADF4B4C7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8ABEAFF21B9CB94900E8129D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABEB0051B9CB94900E8129D /* SecondViewController.m in Sources */,
+				8ABEB02C1B9CCD4400E8129D /* FoursquareRequests.m in Sources */,
+				8ABEB0451B9D4C5800E8129D /* ActionsTableViewCell.m in Sources */,
+				8ABEB0291B9CCB3E00E8129D /* NearbyVenuesTableViewController.m in Sources */,
 				8ABEAFFF1B9CB94900E8129D /* AppDelegate.m in Sources */,
-				8ABEB0021B9CB94900E8129D /* FirstViewController.m in Sources */,
+				8ABEB03C1B9D0FB600E8129D /* VenueDetailViewController.m in Sources */,
+				8ABEB0521B9E0F4200E8129D /* Venue+Util.m in Sources */,
+				8ABEB04E1B9E08E900E8129D /* UITableView+NimbusModels.m in Sources */,
+				8ABEB0581B9E502600E8129D /* RecentCheckinsTableViewController.m in Sources */,
+				8ABEB04A1B9D4D1400E8129D /* CoreTableViewCell.m in Sources */,
+				8ABEB05B1B9E51F700E8129D /* Checkin.m in Sources */,
+				8ABEB0551B9E36DA00E8129D /* FoursquareAuthManager.m in Sources */,
+				8ABEB0301B9CD1F300E8129D /* Venue.m in Sources */,
 				8ABEAFFC1B9CB94900E8129D /* main.m in Sources */,
+				8ABEB0351B9CF23D00E8129D /* VenueTableViewCell.m in Sources */,
+				8ABEB0391B9D044100E8129D /* CLLocationManager+Simulator.m in Sources */,
+				8ABEB0401B9D3F6400E8129D /* PhotosTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +417,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8ABEB0061B9CB94900E8129D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8ABEB0071B9CB94900E8129D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8ABEB00B1B9CB94900E8129D /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,9 +512,11 @@
 		};
 		8ABEB01D1B9CB94900E8129D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAB588903F2E5F915E10626F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShypChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -363,9 +524,11 @@
 		};
 		8ABEB01E1B9CB94900E8129D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CB4409F9BED78DF2ADD5FE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShypChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +587,7 @@
 				8ABEB01E1B9CB94900E8129D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ABEB01F1B9CB94900E8129D /* Build configuration list for PBXNativeTarget "ShypChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +596,7 @@
 				8ABEB0211B9CB94900E8129D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

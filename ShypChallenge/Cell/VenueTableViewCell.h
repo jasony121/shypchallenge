@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  VenueTableViewCell.h
 //  ShypChallenge
 //
 //  Created by Jason Yonker on 9/6/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+#import "NimbusModels.h"
 
+@interface VenueTableViewCell : UITableViewCell <NICell>
 
 @end
-
