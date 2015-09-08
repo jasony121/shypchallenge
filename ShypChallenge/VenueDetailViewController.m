@@ -12,6 +12,7 @@
 #import "UITableView+NimbusModels.h"
 #import "ActionsTableViewCell.h"
 #import "FoursquareAuthManager.h"
+#import "ConnectingOverlayWindow.h"
 
 #import "NimbusModels.h"
 #import <MapKit/MapKit.h>
@@ -32,6 +33,7 @@ typedef NS_ENUM(NSInteger, VenueDetailSection) {
     NSArray *_similarVenues;
     NIMutableTableViewModel *_model;
     NITableViewActions *_actions;
+    ConnectingOverlayWindow *_connectinOverlayWindow;
 }
 
 - (instancetype)initWithVenue:(Venue *)venue {
@@ -166,11 +168,12 @@ typedef NS_ENUM(NSInteger, VenueDetailSection) {
 - (void)checkinPressed {
     FoursquareAuthManager *manager = [FoursquareAuthManager sharedManager];
     if (manager.authenticated) {
+        _connectinOverlayWindow = [[ConnectingOverlayWindow alloc] init];
+        [_connectinOverlayWindow showAnimated:YES];
         [FoursquareRequests checkinRequestWithIdentifier:_venue.identifier success:^(AFHTTPRequestOperation *operation, id response) {
-            NSString *message = [NSString stringWithFormat:@"Successfully checked in to %@!", _venue.name];
-            [[[UIAlertView alloc] initWithTitle:@"Success" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [_connectinOverlayWindow hideAfterShowingErrorMessage:@"Success"];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-            [[[UIAlertView alloc] initWithTitle:nil message:@"Error. Failed to check in." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [_connectinOverlayWindow hideAfterShowingErrorMessage:@"Error. Failed to check in."];
         }];
     } else {
         [manager showSignInDialog];

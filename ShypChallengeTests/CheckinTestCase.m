@@ -38,7 +38,7 @@
     [tester tapViewWithAccessibilityLabel:@"City of San Francisco"];
     [tester tapViewWithAccessibilityLabel:@"Checkin"];
     [tester waitForViewWithAccessibilityLabel:@"Success"];
-    [tester tapViewWithAccessibilityLabel:@"OK"];
+    [tester waitForTimeInterval:5];
     [tester tapViewWithAccessibilityLabel:@"Back"];
     [tester tapViewWithAccessibilityLabel:@"History"];
     [tester waitForViewWithAccessibilityLabel:@"City of San Francisco"];

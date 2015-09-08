@@ -32,6 +32,8 @@
 		8ABEB0701B9E638A00E8129D /* UITableView+NimbusModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB06F1B9E638A00E8129D /* UITableView+NimbusModels.m */; };
 		8ABEB0721B9E831500E8129D /* CheckinTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0711B9E831500E8129D /* CheckinTestCase.m */; };
 		8ABEB0741B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0731B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m */; };
+		8ABEB0771B9E909B00E8129D /* ConnectingOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0761B9E909B00E8129D /* ConnectingOverlayWindow.m */; };
+		8ABEB07A1B9E90B800E8129D /* UIView+Visibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB0791B9E90B800E8129D /* UIView+Visibility.m */; };
 		E5DD74E5A52735B8C7A092CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFADE32DBE211280C849103C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,10 @@
 		8ABEB06F1B9E638A00E8129D /* UITableView+NimbusModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NimbusModels.m"; sourceTree = "<group>"; };
 		8ABEB0711B9E831500E8129D /* CheckinTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckinTestCase.m; sourceTree = "<group>"; };
 		8ABEB0731B9E8F5800E8129D /* NearbyVenuesTableViewControllerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyVenuesTableViewControllerTestCase.m; sourceTree = "<group>"; };
+		8ABEB0751B9E909B00E8129D /* ConnectingOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectingOverlayWindow.h; sourceTree = "<group>"; };
+		8ABEB0761B9E909B00E8129D /* ConnectingOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectingOverlayWindow.m; sourceTree = "<group>"; };
+		8ABEB0781B9E90B800E8129D /* UIView+Visibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Visibility.h"; sourceTree = "<group>"; };
+		8ABEB0791B9E90B800E8129D /* UIView+Visibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Visibility.m"; sourceTree = "<group>"; };
 		AAB588903F2E5F915E10626F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B0CB4409F9BED78DF2ADD5FE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C53E17A74900C9FFD26F7703 /* Pods-ShypChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShypChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ShypChallengeTests/Pods-ShypChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +155,8 @@
 		8ABEAFF81B9CB94900E8129D /* ShypChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				8ABEB0751B9E909B00E8129D /* ConnectingOverlayWindow.h */,
+				8ABEB0761B9E909B00E8129D /* ConnectingOverlayWindow.m */,
 				8ABEB04F1B9E0F1700E8129D /* Categories */,
 				8ABEB0311B9CEE3600E8129D /* Cell */,
 				8ABEB02D1B9CCD7C00E8129D /* Model */,
@@ -231,6 +239,8 @@
 		8ABEB04F1B9E0F1700E8129D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				8ABEB0781B9E90B800E8129D /* UIView+Visibility.h */,
+				8ABEB0791B9E90B800E8129D /* UIView+Visibility.m */,
 				8ABEB06E1B9E638A00E8129D /* UITableView+NimbusModels.h */,
 				8ABEB06F1B9E638A00E8129D /* UITableView+NimbusModels.m */,
 				8ABEB06B1B9E635D00E8129D /* CLLocationManager+Simulator.h */,
@@ -428,7 +438,9 @@
 				8ABEB0701B9E638A00E8129D /* UITableView+NimbusModels.m in Sources */,
 				8ABEAFFF1B9CB94900E8129D /* AppDelegate.m in Sources */,
 				8ABEB03C1B9D0FB600E8129D /* VenueDetailViewController.m in Sources */,
+				8ABEB07A1B9E90B800E8129D /* UIView+Visibility.m in Sources */,
 				8ABEB0521B9E0F4200E8129D /* Venue+Util.m in Sources */,
+				8ABEB0771B9E909B00E8129D /* ConnectingOverlayWindow.m in Sources */,
 				8ABEB06D1B9E635D00E8129D /* CLLocationManager+Simulator.m in Sources */,
 				8ABEB0581B9E502600E8129D /* RecentCheckinsTableViewController.m in Sources */,
 				8ABEB05B1B9E51F700E8129D /* Checkin.m in Sources */,
