@@ -24,6 +24,7 @@
     CLLocationManager *_locationManager;
     NITableViewActions *_actions;
     NITableViewModel *_model;
+    BOOL _searching;
 }
 
 - (void)viewDidLoad {
@@ -41,11 +42,27 @@
     }];
     self.tableView.delegate = [_actions forwardingTo:self];
     
+    self.tableView.tableFooterView = [[UIView alloc] init];
+    
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
+    
+    [self performSearchOrShowErrorOrRequestLocationServicesAuthorization];
+}
+
+- (void)performSearchOrShowErrorOrRequestLocationServicesAuthorization {
     if (![self isAuthorizedLocationManagerStatus:[CLLocationManager authorizationStatus]]) {
-        [_locationManager requestWhenInUseAuthorization];
+        [self disableRefreshControlAndShowErrorMessage];
+        
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+            if ([_locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+                [_locationManager requestWhenInUseAuthorization];
+            } else {
+                [_locationManager startUpdatingLocation];
+            }
+        }
     } else {
+        [_locationManager startUpdatingLocation];
         [self maybePerformSearch];
     }
 }
@@ -55,32 +72,78 @@
 }
 
 - (void)maybePerformSearch {
-    if ([self isAuthorizedLocationManagerStatus:[CLLocationManager authorizationStatus]] && _locationManager.location) {
-        [self performSearch];
+    if (![self isAuthorizedLocationManagerStatus:[CLLocationManager authorizationStatus]] || !_locationManager.location) {
+        return;
     }
-}
-
-- (void)performSearch {
+    
+    if (_searchLocation && [_searchLocation distanceFromLocation:_locationManager.location] < 100) {
+        return;
+    }
+    
+    [self enableRefreshControlAndHideErrorMessage];
+    
+    _searching = YES;
     _searchLocation = _locationManager.location;
+    [self.refreshControl beginRefreshing];
     
     [FoursquareRequests venuesSearchRequestWithLocation:_searchLocation success:^(AFHTTPRequestOperation *operation, NSArray *venues) {
         _model = [[NITableViewModel alloc] initWithListArray:venues delegate:(id)[NICellFactory class]];
         self.tableView.dataSource = _model;
         [self.tableView reloadData];
+        [self.refreshControl endRefreshing];
+        _searching = NO;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        // TODO
+        [self.refreshControl endRefreshing];
+        _searching = NO;
     }];
+}
+
+- (void)enableRefreshControlAndHideErrorMessage {
+    if (!self.refreshControl) {
+        self.refreshControl = [[UIRefreshControl alloc] init];
+        [self.refreshControl addTarget:self action:@selector(refreshControlValueChanged) forControlEvents:UIControlEventValueChanged];
+        self.tableView.tableHeaderView = [[UIView alloc] init];
+    }
+}
+
+- (void)disableRefreshControlAndShowErrorMessage {
+    UILabel *label = [[UILabel alloc] init];
+    label.text = @"This application requires access to Location Services";
+    
+    CGRect rect = self.tableView.bounds;
+    rect.size.height = 200;
+    label.frame = rect;
+    label.numberOfLines = 0;
+    label.textAlignment = NSTextAlignmentCenter;
+    self.tableView.tableHeaderView = label;
+    self.refreshControl = nil;
+    
+    self.tableView.dataSource = nil;
+    [self.tableView reloadData];
+}
+
+- (void)refreshControlValueChanged {
+    if (self.refreshControl.refreshing && !_searching) {
+        // Force refresh
+        _searchLocation = nil;
+        [self maybePerformSearch];
+    }
 }
 
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    [self maybePerformSearch];
+    if ([self isAuthorizedLocationManagerStatus:status]) {
+        [_locationManager startUpdatingLocation];
+    }
+    [self performSearchOrShowErrorOrRequestLocationServicesAuthorization];
 }
 
 - (void)locationManager:(CLLocationManager *)manager
      didUpdateLocations:(NSArray *)locations {
-    
+    if (self.tableView.contentOffset.y < 100) {
+        [self maybePerformSearch];
+    }
 }
 
 @end

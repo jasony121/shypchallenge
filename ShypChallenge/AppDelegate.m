@@ -12,7 +12,7 @@
 #import "RecentCheckinsTableViewController.h"
 #import "FoursquareAuthManager.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () <UITabBarControllerDelegate>
 
 @end
 
@@ -28,6 +28,7 @@
                          
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     tabBarController.viewControllers = @[ nearby, recent ];
+    tabBarController.delegate = self;
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
     
@@ -62,6 +63,14 @@
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     [[FoursquareAuthManager sharedManager] handleCallbackURL:url];
+    return YES;
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    if ([viewController isKindOfClass:[RecentCheckinsTableViewController class]] && ![FoursquareAuthManager sharedManager].authenticated) {
+        [[FoursquareAuthManager sharedManager] showSignInDialog];
+        return NO;
+    }
     return YES;
 }
 
